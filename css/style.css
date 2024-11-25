@@ -1,0 +1,528 @@
+/* ------------------------------ /
+/     2020 - yuzde.gen.im         /
+/  ----------------------------- */
+
+body {
+    background:#c8d8ee;
+    font-family:Helvetica,Arial,Sans-serif,Verdana;
+    color:#445;
+    margin:0;
+    padding:0;
+}
+ 
+a, a:visited {
+    color:#00f
+}
+
+.btn-nightmode {
+    cursor:pointer
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.clearfix { display: inline-block; }
+
+* html .clearfix { height: 1%; }
+
+.clearfix { display: block; }
+
+.container {
+    margin:auto;
+    max-width:900px
+}
+
+nav {
+    background:#fff;
+    margin:10px 0 0 0;
+    border-radius:4px;
+    border:1px solid #e0e0e0;
+    font-size:13px
+}
+
+nav a, nav a:link, nav a:visited {
+    padding:15px 10px;
+    display:inline-block;
+    border-right:1px solid #e3f2fd;
+}
+
+nav a:hover, nav span {
+    display:inline-block;
+    padding:15px 10px 12px 10px;
+    background:#f6fbff;
+    border-bottom:3px solid #1976d2
+}
+
+#header {
+    padding:1px 10px 1px 10px;
+    background:#1976d2;
+}
+
+#main, #footer, .container {
+    margin:10px auto;
+    max-width:900px;
+}
+
+#main {
+    padding:10px
+}
+
+#main p:first-child { 
+    margin-top:0
+}
+
+#header div h1 {
+    margin: 0;
+    font: bold 22px tahoma, helvetica, arial, sans-serif; 
+    color: #fff;
+}
+
+#header div h1 a {
+    color: #fff;
+    text-decoration:none
+}
+
+#header div h1 a em {
+    color:yellow;
+    font:bold 16px tahoma, helvetica, sans-serif
+}
+
+#header div h1 a:hover, #header div h1 a:active {
+    color: yellow;
+}
+
+#header div > strong {
+    display:block;
+    float:left;
+    font:bold 20px tahoma, helvetica, arial, sans-serif;
+    background:#fff;
+    color:#1976d2;
+    padding:4px 5px;
+    margin-right:10px;
+    width:25px;
+    height:25px;
+    border-radius:50%
+}
+
+#header div > strong:hover {
+    background: yellow;
+}
+
+#header div > strong a {
+    color:#1976d2;
+    text-decoration:none;
+}
+
+
+#adTop, #adBottom {
+    margin:auto;
+    max-width:740px;
+}
+
+.section {
+    position:relative;
+    margin:20px 0;
+    padding:13px 20px 15px 20px;
+    background:#fff;
+    box-shadow:0 0 2px #aab;
+    color:#444;
+    border-radius:3px;
+}
+
+.section .tool {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.section p  {
+    margin-top:0;
+    padding-top:0;
+    font:italic normal 12px verdana
+}
+
+.info-box {
+    border-radius:4px;
+    padding:15px;
+    background:#eef2fb;
+    margin-bottom:10px
+}
+
+.info-box p  {
+    font:normal 14px/22px sans-serif
+}
+
+code { 
+    background:#f3f3f3;
+    padding:5px 10px;
+    border-radius:3px
+}
+
+#A_sol, #B_sol, #C_sol, #D_sol , #E_sol {
+    display:none;
+}
+
+#A_sol code, #B_sol code, #C_sol code, #D_sol code, #E_sol code {
+    font-size:16px;
+    line-height:20px;
+    display:inline-block
+}
+
+.input {
+    font:bold 20px sans-serif;
+    padding:5px 7px;
+    border:1px solid #bbc;
+    border-radius:2px;
+    width:120px;
+    margin-bottom:5px;
+    background:#f4f6f9
+}
+
+.input:focus {
+    outline:none;
+    border:1px solid #4285f4;
+    box-shadow:0 0 5px #4285f4
+}
+
+.input-error {
+    background:#ff7070;
+}
+
+.nobr {
+    display:inline-block;
+    white-space: nowrap; 
+}
+
+@media (min-width: 760px) {
+  .toRight {
+    float:right
+  }
+}
+
+kbd {
+    display:inline-block;
+    padding:5px;
+    font:bold 12px Sans-serif, Helvetica;
+    background:#fff;
+    color:#222;
+    border-right:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    border-top:none;
+    border-left:none;
+    border-radius:3px;
+}
+
+kbd.selected {
+    background-color:#4285f4;
+    color:#ddf
+}
+
+.tooltip {
+    float:right;
+    margin-left:10px;
+    display:inline-block;
+    width:15px;
+    height:15px;
+    background:#f3f5f7;
+    color:#000;
+    padding:5px;
+    border-radius:50%;
+    text-align:center;
+    margin-top:-7px;
+}
+
+.tooltip:hover, .tooltip:active, .tooltip:focus {
+    background:#4285f4;
+    color:#fff
+}
+
+.tooltip:hover div, .tooltip:active div, .tooltip:focus div {
+    display:block;
+}
+
+.tooltip div {
+    position:absolute;
+    right:10px;
+    top:30px;
+    display: none;
+    text-align:left;
+    max-width:500px;
+    z-index: 1000;
+    font:normal 12px verdana;
+    color:#555;
+    background:#fff;
+    padding:7px 15px;
+    box-shadow:0 0 3px #aaa
+}
+
+.tooltip div h3 {
+    font-size:13px;
+    color:#4285f4
+}
+
+.tooltip div p {
+    font-style:normal;
+    line-height:19px
+}
+
+.tooltip div p strong {
+    color:#4285f4
+}
+
+.tip-social {
+}
+
+.social {
+    margin-top:5px;
+    display:inline-block;
+    vertical-align:top
+}
+
+.social kbd {
+    padding: 3px 10px;
+    font-size:20px;
+    vertical-align:top;
+    margin-right:15px;    
+    float:right
+}
+
+.percentage {
+    color:#fff;
+    background-color:#4285f4;
+    font-weight:bolder;
+    padding:2px 3px;
+    border-radius:2px
+}
+
+.text-content {
+    line-height:1.4em
+}
+
+#footer {
+    background:#c8d8ee;
+    padding:15px 10px;
+    text-align:center;
+    font:normal 11px verdana;
+    color:#333;
+    border-radius:20px;
+}
+
+#footer a {
+    text-decoration:none;
+    color:#666
+}
+
+#footer a:hover, #footer a:active  {
+    text-decoration:underline;
+    color:#4285f4
+}
+
+.pointer {
+    cursor:pointer
+}
+
+@media (max-width: 640px) {
+  .hide-mobile {
+    display:none !important;
+  }
+}
+
+@media (min-width: 641px) {
+  .visible-mobile {
+    display:none !important;
+  }
+}
+
+#gen-table {
+    margin:auto;
+}
+
+/*--- w >= 900px --*/
+@media (min-width: 900px) {
+    #gen-table {
+        display:table;
+        max-width:900px
+    }
+    
+    #gen-table > div {
+        display:table-cell;
+        vertical-align:top
+    }
+    
+    #gen-table #main {
+        width:710px
+    }
+    
+    #gen-table #r-otomatik {
+        min-width:180px;
+        min-height:600px
+    }
+}
+
+/*--- w >= 900px --*/
+@media (max-width: 899px) {
+    #r-otomatik {
+        max-width:710px
+    }
+}
+
+/* ------------------------------ /
+/         night mode              /
+/  ----------------------------- */
+
+body.nightMode {
+    background:#18191d;
+    color:#cfd4d7;
+}
+
+.nightMode a, .nightMode a:visited {
+    color:#64b5f6
+}
+
+.nightMode a:active, .nightMode a:hover {
+    color:yellow
+}
+
+
+.nightMode #header {
+    background:#3b4652;
+}
+
+.nightMode #header div h1 {
+    color: #90caf9;
+}
+
+.nightMode #header div h1 a {
+    color: #90caf9;
+}
+
+.nightMode #header div h1 a em {
+    color:yellow;
+}
+
+.nightMode #header div h1 a:hover, .nightMode #header div h1 a:active {
+    color: #fff;
+}
+
+.nightMode #header div > strong {
+    background:#4285f4;
+    color:#fff;
+}
+
+.nightMode #header div > strong:hover {
+    background: #3675b4;
+}
+
+.nightMode #header div > strong a {
+    color:#fff;
+}
+
+.nightMode .section {
+    background:#333944;
+    color:#e0e0e0;
+    box-shadow: 0 0 3px #000;
+}
+
+.nightMode .info-box {
+    background:#22222f;
+}
+
+.nightMode code { 
+    background:#1b2936;
+}
+
+.nightMode .input {
+    border:1px solid #0c161f;
+    background:#667;
+    color:#fff;
+    text-shadow:0 0 2px #000
+}
+
+.nightMode .input:focus {
+    border:1px solid #4285f4;
+    box-shadow:0 0 5px #4285f4
+}
+
+.nightMode .input-error {
+    background:#aa3333;
+}
+
+
+.nightMode nav {
+    background:#3b4652;
+    border-color:#1b2936;
+}
+
+.nightMode nav a, .nightMode nav a:link, .nightMode nav a:visited {
+    border-right:1px solid #334;
+}
+
+.nightMode nav a:hover, .nightMode nav span {
+    background:#3b4652;
+    border-color:yellow
+}
+
+.nightMode kbd {
+    background:#335;
+    color:#cfd4d7;
+    border-right:1px solid #0c161f;
+    border-bottom:1px solid #0c161f;
+}
+
+.nightMode kbd.selected {
+    background-color:#4285f4;
+    color:#ddf
+}
+
+.nightMode .tooltip {
+    background:#111;
+    color:#fff;
+}
+
+.nightMode .tooltip:hover, .nightMode .tooltip:active, .nightMode .tooltip:focus {
+    background:#4285f4;
+    color:#fff
+}
+
+.nightMode .tooltip div {
+    color:#cfd4d7;
+    background:#3b4652;
+    box-shadow:0 0 3px #0b1926
+}
+
+.nightMode .tooltip div h3 {
+    color:#cfd4d7
+}
+
+.nightMode .tooltip div p strong {
+    color:#cfd4d7
+}
+
+.nightMode .percentage {
+    color:#fff;
+    background-color:#4285f4;
+}
+
+.nightMode #footer {
+    background:#18191d;
+    border-top:1px solid #1b2936;
+    color:#acb0b3
+}
+
+.nightMode #footer a {
+    color:#4285f4
+}
+
+.nightMode #footer a:hover, .nightMode #footer a:active  {
+    color:#7777ff
+}
+
